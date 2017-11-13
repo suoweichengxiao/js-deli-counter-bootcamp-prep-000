@@ -6,11 +6,9 @@ else {katzDeli.push(`${name}`); return `Welcome, ${name}. You are number ${katzD
 }
 
 function nowServing(deliLine) {
-  var serving = `Currently serving ${deliLine[0]}.`;
-  function newLine() {deliLine.splice(0, 1); return deliLine};
   if (deliLine.length > 0) {
-  return (serving, newLine);
-}
+  return (`Currently serving ${deliLine[0]}.`);
+  deliLine.shift()}
   else return `There is nobody waiting to be served!`;
 }
 
