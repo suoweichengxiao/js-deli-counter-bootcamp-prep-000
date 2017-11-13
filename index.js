@@ -1,8 +1,8 @@
 var katzDeli = [];
 
-function takeANumber(katzDeliLine, name) {
-if (katzDeliLine.length === 0) {katzDeliLine.unshift(`${name}`); return `Welcome, ${name}. You are number 1 in line.`}
-else {katzDeliLine.push(`${name}`); return `Welcome, ${name}. You are number ${katzDeliLine.length} in line.`};
+function takeANumber(katzDeli, name) {
+if (katzDeli.length === 0) {katzDeli.unshift(`${name}`); return `Welcome, ${name}. You are number 1 in line.`}
+else {katzDeli.push(`${name}`); return `Welcome, ${name}. You are number ${katzDeli.length} in line.`};
 }
 
 function nowServing(katzDeliLine) {
