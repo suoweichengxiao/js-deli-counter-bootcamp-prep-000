@@ -7,7 +7,7 @@ else {katzDeli.push(`${name}`); return `Welcome, ${name}. You are number ${katzD
 
 function nowServing(deliLine) {var serving = `Currently serving ${deliLine[0]}.`;
 var removed = deliLine.shift();
-var newLine = return deliLine;
+var newLine = deliLine;
   if (deliLine.length > 0) {
   return (serving, newLine);
 }
