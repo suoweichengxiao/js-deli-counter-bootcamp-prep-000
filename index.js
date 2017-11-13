@@ -5,7 +5,8 @@ if (katzDeli.length === 0) {katzDeli.unshift(`${name}`); return `Welcome, ${name
 else {katzDeli.push(`${name}`); return `Welcome, ${name}. You are number ${katzDeli.length} in line.`};
 }
 
-function nowServing(deliLine) {
+function nowServing(deliLine) { var serving = `Currently serving ${deliLine[0]}.`;
+var newLine = deliLine.splice(0, 1);
   if (deliLine.length > 0) {
   return (`Currently serving ${deliLine[0]}.`);
   deliLine.shift()}
