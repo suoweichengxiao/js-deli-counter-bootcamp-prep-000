@@ -9,7 +9,7 @@ function nowServing(deliLine) {var serving = `Currently serving ${deliLine[0]}.`
 var removed = deliLine.shift();
 var newLine = deliLine;
   if (deliLine.length > 0) {
-  return (serving, newLine);
+  return (serving);
 }
   else return `There is nobody waiting to be served!`;
 }
