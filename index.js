@@ -7,7 +7,7 @@ else {katzDeli.push(`${name}`); return `Welcome, ${name}. You are number ${katzD
 
 function nowServing(deliLine) {
   if (deliLine.length > 0) {
-  return (`Currently serving ${deliLine[0]}.`, deliLine.push, deliLine);
+  return (`Currently serving ${deliLine[0]}.`, deliLine.push);
 }
   else return `There is nobody waiting to be served!`;
 }
